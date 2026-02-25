@@ -2,6 +2,7 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
 import GymStation from "./components/GymStation";
+import CanvaEmbed from "./components/canvaebeded";
 import "./index.css"; // ← Tailwind import
 
 const container = document.getElementById("root");
