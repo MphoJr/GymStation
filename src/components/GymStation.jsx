@@ -1,6 +1,7 @@
 /* src/components/GymStation.jsx */
+import { Import } from "lucide-react";
 import React from "react";
-
+import TestedPartners from "./TrustedPartners";
 /* ---------- Data -------------------------------------------- */
 const features = [
   { title: "Unlimited Access", description: "Train whenever you want." },
@@ -25,7 +26,7 @@ const offerings = [
 
 /* ---------- Feature card -------------------------------- */
 const FeatureCard = ({ title, description }) => (
-  <div className="border border-gray-700 rounded-lg p-6 shadow-md bg-gray-800 hover:bg-gray-700 transition">
+  <div className="border border-gray-700 rounded-lg p-6 shadow-md bg-black hover:bg-gray-700 transition">
     <h3 className="text-3xl font-semibold text-green-400 mb-2">{title}</h3>
     <p className="text-gray-300 text-xl">{description}</p>
   </div>
@@ -95,16 +96,14 @@ export const GymStation = () => (
       >
         <div className="absolute inset-0 bg-black opacity-60" />
         <div className="relative z-10 max-w-7xl mx-auto">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight mb-6">
-            Join our community and take the first step toward
+          <h1 className="text-4xl sm:text-4xl md:text-6xl font-extrabold leading-tight mb-6">
+            Join our community and take the first step
             <br />
-            your best self — with expert trainers, modern facilities, and a plan
-            built for you.
           </h1>
           <div className="mt-8">
             <a
               href="#"
-              className="inline-block bg-green-600 hover:bg-green-700 text-white font-semibold px-8 py-3 rounded-md transition"
+              className="inline-block bg-green-600 hover:bg-green-700 text-white font-semibold px-8 py-3 rounded-md transition text-2xl"
             >
               JOIN MEMBERSHIP NOW!
             </a>
@@ -114,7 +113,7 @@ export const GymStation = () => (
 
       {/* FEATURES grid */}
       <div className="max-w-full mx-auto px-6 py-12">
-        <h2 className="text-7xl font-bold text-green-400 mb-8">Membership</h2>
+        <h2 className="text-8xl font-bold text-green-400 mb-8">MEMBERSHIP</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {features.map((f, idx) => (
             <FeatureCard
@@ -129,7 +128,7 @@ export const GymStation = () => (
       {/* OFFERINGS grid */}
       <div className="max-w-full mx-auto px-6 py-12 ">
         <div className="flex flex-col md:flex-row justify-between items-center mb-10">
-          <h2 className="text-7xl font-bold text-green-400">Our Offerings</h2>
+          <h2 className="text-8xl font-bold text-green-400">OUR OFFERINGS</h2>
           <button className="mt-4 md:mt-0 bg-blue-600 text-white px-6 py-2 rounded-lg shadow hover:bg-blue-700 transition text-xl">
             See Class Schedules
           </button>
@@ -141,6 +140,7 @@ export const GymStation = () => (
         </div>
       </div>
     </>
+    <TestedPartners />
   </div>
 );
 
