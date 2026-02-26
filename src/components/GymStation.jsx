@@ -16,12 +16,12 @@ const features = [
 ];
 
 const offerings = [
-  { title: "Plato", img: "/images/plato.jpg" },
-  { title: "Mobility", img: "/images/mobility.jpg" },
-  { title: "Booty Factory", img: "/images/booty.jpg" },
-  { title: "Hybrid Training Floor", img: "/images/hybrid.jpg" },
-  { title: "Reformer Pilates", img: "/images/pilates.jpg" },
-  { title: "Strength", img: "/images/strength.jpg" },
+  { title: "bench", img: "/images/bench.png" },
+  { title: "Mobility", img: "/images/bumbbels.jpg" },
+  { title: "Booty Factory", img: "/images/tredmill.jpg" },
+  { title: "Hybrid Training Floor", img: "/images/olly.jpg" },
+  { title: "Reformer Pilates", img: "/images/Fp.jpg" },
+  { title: "Strength", img: "/images/pex.jpg" },
 ];
 
 /* ---------- Feature card -------------------------------- */
@@ -38,7 +38,7 @@ const OfferingCard = ({ title, img }) => (
     <img
       src={img}
       alt={title}
-      className="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300"
+      className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
     />
     <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 p-4">
       <h3 className="text-white text-lg font-semibold">{title}</h3>
